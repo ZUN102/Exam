@@ -1,44 +1,55 @@
 package bean;
 
-public class TestListStudent {
+import java.util.Map;
+
+public class TestListSubject {
 
 //	フィールドの定義
-	private String subjectName;
-	private String subjectCd;
-	private int num;
-	private int point;
+	private int entYear;
+	private String studentNo;
+	private String studentName;
+	private String classNum;
+	private Map<Integer, Integer> points;
 
 
-	public String getSubjectName() {
-		return subjectName;
+	public int getEntYear() {
+		return entYear;
 	}
 
-	public void setSubjectName(String subjectName) {
-		this.subjectName = subjectName;
+	public void setEntYear(int entYear) {
+		this.entYear = entYear;
 	}
 
-	public String getSubjectCd() {
-		return subjectCd;
+	public String getStudentNo() {
+		return studentNo;
 	}
 
-	public void setSubjectCd(String subjectCd) {
-		this.subjectCd = subjectCd;
+	public void setStudentNo(String studentNo) {
+		this.studentNo = studentNo;
 	}
 
-	public int getNum() {
-		return num;
+	public String getStudentName() {
+		return studentName;
 	}
 
-	public void setNum(int num) {
-		this.num = num;
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
 	}
 
-	public int getPoint() {
-		return point;
+	public String getClassNum() {
+		return classNum;
 	}
 
-	public void setPoint(int point) {
-		this.point = point;
+	public void setClassNum(String classNum) {
+		this.classNum = classNum;
+	}
+
+	public Map<Integer, Integer> getPoints() {
+		return points;
+	}
+
+	public void setPoints(Map<Integer, Integer> points) {
+		this.points = points;
 	}
 
 }
